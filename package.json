@@ -1,9 +1,20 @@
 {
-  "author": "Thihazaw",
-  "description": "EC Web Application",
-  "private": true,
+  "name": "ecommerce-mvc",
+  "version": "1.0.0",
+  "description": "",
+  "devDependencies": {
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
+  },
+  "scripts": {
+    "build": "webpack",
+    "watch": "npm run build -- --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "laravel-elixir": "~5.0.0",
-    "gulp": "~3.9"
+    "css-loader": "^3.4.2",
+    "style-loader": "^1.1.3"
   }
 }
