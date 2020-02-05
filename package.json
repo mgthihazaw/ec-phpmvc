@@ -1,0 +1,9 @@
+{
+  "author": "Thihazaw",
+  "description": "EC Web Application",
+  "private": true,
+  "dependencies": {
+    "laravel-elixir": "~5.0.0",
+    "gulp": "~3.9"
+  }
+}
