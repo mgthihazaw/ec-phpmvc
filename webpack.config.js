@@ -1,25 +1,32 @@
 var webpack = require("webpack");
 var path = require("path");
-
+var MiniCssExtractPlugin = require("mini-css-extract-plugin");
+let productionMode = process.env.NDE_ENV == "production";
 module.exports = {
   //from
-  entry: ["./resources/assets/js/app.js"],
+  entry: {
+    app: ["./resources/assets/js/app.js", "./resources/assets/sass/app.scss"]
+  },
   //to
   output: {
-    path: path.resolve(__dirname, "./public/js"),
-    filename: "app.js"
+    path: path.resolve(__dirname, "./public/"),
+    filename: "js/[name].js"
   },
   //use module that we wanted
   module: {
     rules: [
       {
-        test: /\.s[ac]ss$/,
-        use: ["style-loader", "css-loader", "sass-loader"]
+        test: /\.(sa|sc|c)ss$/,
+        use: [
+          {
+            loader: MiniCssExtractPlugin.loader
+          },
+
+          "css-loader",
+          "sass-loader"
+        ]
       },
-      {
-        test: /\.css$/,
-        use: ["style-loader", "css-loader"]
-      },
+
       {
         test: /\.js$/,
         exclude: /node_modules/,
@@ -27,9 +34,18 @@ module.exports = {
       }
     ]
   },
-  plugins: []
+  plugins: [
+    new MiniCssExtractPlugin({
+      // Options similar to the same options in webpackOptions.output
+      // both options are optional
+      filename: "css/[name].css"
+    }),
+    new webpack.LoaderOptionsPlugin({
+      minimize: productionMode
+    })
+  ]
 };
 //minified version
-if (process.env.NDE_ENV == "production") {
+if (productionMode) {
   module.exports.plugins.push(new webpack.optimize.UglifyJsPlugin());
 }
