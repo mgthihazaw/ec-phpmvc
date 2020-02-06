@@ -1,9 +1,13 @@
 //font
 
-@import url("https://fonts.googleapis.com/css?family=Railway:300,400,600");
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
 
-@import "../bower/vendor/foundation-sites/assets/foundation.scss";
+// @import "../bower/vendor/foundation-sites/assets/foundation.scss";
 
-@import "../bower/vendor/motion-ui/src/motion-ui.scss";
+// @import "../bower/vendor/motion-ui/src/motion-ui.scss";
 
-@include motion-ui;
+$green: green;
+body {
+  color: $green;
+  font-family: "Raleway", sans-serif;
+}
