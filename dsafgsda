@@ -1,0 +1,60 @@
+[33mcommit 688d91f7a07559368013af5a577a1f12f40d4071[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: mgthihazaw <mgthihazaw777@gmail.com>
+Date:   Fri Feb 7 14:14:52 2020 +0630
+
+    add DATABASE ORM
+
+[33mcommit 80fd82810edfd94c9de69c3c252541ed96287e77[m
+Author: mgthihazaw <mgthihazaw777@gmail.com>
+Date:   Fri Feb 7 12:03:51 2020 +0630
+
+    add mvc architecture and psr-4 autoload
+
+[33mcommit e2f1fa0d1f3125786f3a0fbc015af914c277eb82[m
+Author: mgthihazaw <mgthihazaw777@gmail.com>
+Date:   Thu Feb 6 16:46:05 2020 +0630
+
+    add router and htaccess
+
+[33mcommit 315909fcae8e1729ecf6d354f698c665068b1eb9[m
+Merge: c841efe 082cdd1
+Author: mgthihazaw <mgthihazaw777@gmail.com>
+Date:   Thu Feb 6 15:35:16 2020 +0630
+
+    Merge branch 'master' of https://github.com/mgthihazaw/ec-phpmvc
+
+[33mcommit c841efe49f868ad3ccd915c2e06ebfbc70d0d5dc[m
+Author: mgthihazaw <mgthihazaw777@gmail.com>
+Date:   Thu Feb 6 15:33:39 2020 +0630
+
+    add frontend dependecies with outputing app.css and app.js
+
+[33mcommit 30b2163d0c30047386d9a7873c18f29c596668cd[m
+Author: mgthihazaw <mgthihazaw777@gmail.com>
+Date:   Thu Feb 6 14:29:33 2020 +0630
+
+    add js css scss to app.js using webpack with babel
+
+[33mcommit 082cdd1dc152968aa86e874170a0ebf2c09fbbc0[m
+Author: Thihazaw(Sgg) <39465205+mgthihazaw@users.noreply.github.com>
+Date:   Wed Feb 5 16:51:39 2020 +0630
+
+    Update readme.md
+
+[33mcommit a3f9fa6704e2b39a10042434eac0b6381e18bf06[m
+Author: mgthihazaw <mgthihazaw777@gmail.com>
+Date:   Wed Feb 5 16:48:43 2020 +0630
+
+    add frontend configuration and implement webpack
+
+[33mcommit 2f2f2894cd188774432ab0c5aa2476641aec5671[m
+Author: mgthihazaw <mgthihazaw777@gmail.com>
+Date:   Wed Feb 5 13:23:38 2020 +0630
+
+    add env package and implement env
+
+[33mcommit 8ea4bcbb63c2038f875fd31065e29c8ef7558c29[m
+Author: mgthihazaw <mgthihazaw777@gmail.com>
+Date:   Wed Feb 5 10:41:02 2020 +0630
+
+    initial commit
