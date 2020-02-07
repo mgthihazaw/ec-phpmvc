@@ -1,7 +1,7 @@
 #turn on rewrite engine
 
 RewriteEngine on
-RewriteBase /
+#RewriteBase /
 #IF REQUEST FILE IS NOT A REAL FILE
 RewriteCond %{REQUEST_FILENAME} !-f
 
