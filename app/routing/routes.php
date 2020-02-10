@@ -3,6 +3,7 @@
 $router = new AltoRouter();
 
 $router->map('GET', '/', 'App\Controllers\IndexController@index', 'home');
+$router->map('GET', '/mail', 'App\Controllers\IndexController@mailSend', 'mail');
 
 // $match = $router->match();
 
