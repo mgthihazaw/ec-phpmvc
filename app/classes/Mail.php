@@ -53,7 +53,7 @@ class Mail
         $this->mail->setFrom(getenv('ADMIN_EMAIL'), getenv('ADMIN_STORE'));
         $environment = getenv('APP_ENV');
         if ($environment == 'local') {
-            $this->mail->SMTPDebug = 4;
+            // $this->mail->SMTPDebug = 4;
         }
     }
     public function send($data)

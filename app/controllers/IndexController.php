@@ -12,8 +12,8 @@ class IndexController extends BaseController
     }
     public function mailSend()
     {
-        $data = [
-            'to' => '8e0c928547-d105b7@inbox.mailtrap.io',
+        $datas = [
+            'to' => 'thihazawww742@gmail.com',
             'subject' => 'Welcome to admin',
             'view' => 'welcome',
             'name' => 'Thihazaw',
